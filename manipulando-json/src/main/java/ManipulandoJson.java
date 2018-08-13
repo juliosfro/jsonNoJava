@@ -13,7 +13,7 @@ public class ManipulandoJson {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 
 		Gson gson = new GsonBuilder().create();
-		String path = "C:\\Users\\Julio\\workspace\\manipulando-json\\funcionarios.json";
+		String path = System.getProperty("user.dir") + "\\funcionarios.json";
 		InputStream is = new FileInputStream(path);
 		InputStreamReader isr = new InputStreamReader(is);
 		BufferedReader br = new BufferedReader(isr);
